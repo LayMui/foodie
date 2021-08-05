@@ -16,6 +16,7 @@ config.specs = [
 config.capabilities = [
     {
         // The defaults you need to have in your config
+        browserName: '',
         platformName: 'iOS',
         maxInstances: 1,
         // For W3C the appium capabilities need to have an extension prefix

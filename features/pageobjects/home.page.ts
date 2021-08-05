@@ -15,7 +15,7 @@ class HomePage extends Page {
      */
     async searchFor(name: string) {
         await this.inputSearch.setValue(name);   
-        await browser.keys("\uE007"); 
+        await this.inputSearch.touchAction('tap');
     }
 
     /**

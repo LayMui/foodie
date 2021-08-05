@@ -9,7 +9,7 @@ Ask a series of questions/options to config the webdriverio
 
 4. To run
 ```
-npx wdio run ./wdio.conf.js
+npx wdio run ./config/wdio.ios.app.conf.ts
 ```
 it will install the dependencies and create the wdio.conf.ts
 
@@ -34,9 +34,11 @@ Such a service eliminates the need to start appium manually before starting your
 
 Issues: 
 ```
-0-0] RUNNING in /Users/laymui/dev/taiger/foodie/apps/food.app - /features/search_for_restaurant.feature
-[0-0] FAILED in /Users/laymui/dev/taiger/foodie/apps/food.app - /features/search_for_restaurant.feature
+No bundle URL 
+Resolved by running the metro launcher
 ```
 
-## reference
-https://testautonation.com/webdriverio-appium/
+```
+await browser.keys("\uE007"); 
+
+

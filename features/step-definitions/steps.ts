@@ -8,7 +8,7 @@ const pages = {
 }
 
 Given(/^(?:.*) is at the (\w+) app$/, async (page) => {
-    await pages[page].open()
+  //  await pages[page].open()
 });
 
 
