@@ -38,7 +38,10 @@ No bundle URL
 Resolved by running the metro launcher
 ```
 
-```
-await browser.keys("\uE007"); 
-
+8. To add serenityJS library:
+npm i @serenity-js/serenity-bdd --save-dev
+npm i @serenity-js/core --save-dev
+npm i @serenity-js/cucumber --save-dev
+npm i @serenity-js/assertions --save-dev
+npm i @serenity-js/console-reporter --save-dev
 

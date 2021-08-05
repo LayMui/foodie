@@ -7,6 +7,7 @@ const pages = {
     food: HomePage
 }
 
+
 Given(/^(?:.*) is at the (\w+) app$/, async (page) => {
   //  await pages[page].open()
 });
