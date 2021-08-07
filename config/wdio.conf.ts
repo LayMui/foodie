@@ -1,3 +1,12 @@
+import { ConsoleReporter } from '@serenity-js/console-reporter';
+import { ArtifactArchiver } from '@serenity-js/core';
+import { SerenityBDDReporter } from '@serenity-js/serenity-bdd';
+import { Photographer, TakePhotosOfInteractions } from '@serenity-js/webdriverio';
+import isCI = require('is-ci');
+import { resolve } from 'path';  // eslint-disable-line unicorn/import-style
+
+import { Actors } from './../src/features/support/screenplay';
+
 export const config: WebdriverIO.Config = {
     //
     // ====================
@@ -134,6 +143,14 @@ export const config: WebdriverIO.Config = {
     // see also: https://webdriver.io/docs/dot-reporter
     reporters: ['spec'],
 
+
+    autoCompileOpts: {
+        autoCompile: true,
+        tsNodeOpts: {
+            transpileOnly: true,
+            project: resolve(__dirname, './../tsconfig.json'),
+        },
+    },
 
     //
     // If you are using Cucumber you need to specify the location of your step definitions.
