@@ -5,9 +5,13 @@ import { Photographer, TakePhotosOfInteractions } from '@serenity-js/webdriverio
 import isCI = require('is-ci');
 import { resolve } from 'path';  // eslint-disable-line unicorn/import-style
 
+<<<<<<< HEAD
 import { Actors } from './../test/screenplay';
 
 
+=======
+import { Actors } from './../src/features/support/screenplay';
+>>>>>>> d0a7b10540d8b5b4eb7fc5f0ac309b5a414b27d5
 
 export const config: WebdriverIO.Config = {
     //
@@ -146,11 +150,23 @@ export const config: WebdriverIO.Config = {
     reporters: ['spec'],
 
 
+    autoCompileOpts: {
+        autoCompile: true,
+        tsNodeOpts: {
+            transpileOnly: true,
+            project: resolve(__dirname, './../tsconfig.json'),
+        },
+    },
+
     //
     // If you are using Cucumber you need to specify the location of your step definitions.
     cucumberOpts: {
         // <string[]> (file/dir) require files before executing features
+<<<<<<< HEAD
         require: ['./test/step-definitions/*.ts'],
+=======
+        require: ['./src/features/step-definitions/*.steps.ts'],
+>>>>>>> d0a7b10540d8b5b4eb7fc5f0ac309b5a414b27d5
         // <boolean> show full backtrace for errors
         backtrace: false,
         // <string[]> ("extension:module") require files with the given EXTENSION after requiring MODULE (repeatable)
