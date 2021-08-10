@@ -2,16 +2,16 @@ import { Given, When, Then } from '@cucumber/cucumber';
 
 import HomePage from '../page-objects/home.page';
 
-// import { Actor, actorCalled, actorInTheSpotlight, engage, Log } from '@serenity-js/core';
-// import {
-//   Actors
-// } from '../screenplay';
+import { Actor, actorCalled, actorInTheSpotlight, engage, Log } from '@serenity-js/core';
+import {
+  Actors
+} from '../screenplay';
 
-// import {
-//   SearchFor
-// } from '../screenplay/tasks';
+import {
+  SearchFor
+} from '../screenplay/tasks';
 
-// Before(() => engage(new Actors()));
+//Before(() => engage(new Actors()));
 
 const pages = {
     food: HomePage
