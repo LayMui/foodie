@@ -1,3 +1,14 @@
+import { ConsoleReporter } from '@serenity-js/console-reporter';
+import { ArtifactArchiver } from '@serenity-js/core';
+import { SerenityBDDReporter } from '@serenity-js/serenity-bdd';
+import { Photographer, TakePhotosOfInteractions } from '@serenity-js/webdriverio';
+import isCI = require('is-ci');
+import { resolve } from 'path';  // eslint-disable-line unicorn/import-style
+
+import { Actors } from './../test/screenplay';
+
+
+
 export const config: WebdriverIO.Config = {
     //
     // ====================
@@ -21,7 +32,7 @@ export const config: WebdriverIO.Config = {
     // will be called from there.
     //
     specs: [
-        './test/features/**/*.feature'
+        './test/features/*.feature'
     ],
     // Patterns to exclude.
     exclude: [
