@@ -11,11 +11,9 @@ import {
   SearchFor
 } from '../screenplay/tasks';
 
-//Before(() => engage(new Actors()));
-
-const pages = {
-    food: HomePage
-}
+// const pages = {
+//     food: HomePage
+// }
 
 
 Given(/^(?:.*) is at the (\w+) app$/, async (page) => {
@@ -24,6 +22,7 @@ Given(/^(?:.*) is at the (\w+) app$/, async (page) => {
 
 
 When(/^he wants to search for restaurant name (\w+)$/, async (name) => {
+ // return actorCalled("Jan").attemptsTo(SearchFor(name));
     await HomePage.searchFor(name);
 });
 
