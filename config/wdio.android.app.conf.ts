@@ -5,7 +5,7 @@ import config from './wdio.conf.appium';
 // Specs
 // ============
 config.specs = [
-    './features/**/*.feature'
+    './test/features/**/*.feature'
 ];
 
 // ============

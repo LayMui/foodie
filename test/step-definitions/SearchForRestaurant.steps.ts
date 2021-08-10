@@ -1,6 +1,6 @@
 import { Given, When, Then } from '@cucumber/cucumber';
 
-import HomePage from '../pageobjects/home.page';
+import HomePage from '../page-objects/home.page';
 
 
 const pages = {

@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/LayMui/cucumber-webdriverio#readme",
   "dependencies": {
-    "@wdio/cli": "^7.9.0",
+    "@wdio/cli": "^7.9.1",
     "appium": "^1.21.0"
   },
   "devDependencies": {
