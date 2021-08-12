@@ -45,9 +45,18 @@ npm i @serenity-js/cucumber --save-dev
 npm i @serenity-js/assertions --save-dev
 npm i @serenity-js/console-reporter --save-dev
 
+
 Issue:
 ```
 TypeError: screenplay_1.SearchFor is not a function
     at /Users/laymui/dev/taiger/foodie/src/features/step-definitions/searchForRestaurant.steps.ts:16:40
     at step (/Users/laymui/dev/taiger/food
  ```
+
+9. Add the baseUrl option to tsconfig.json
+to change how to do import and to start from project root folder
+```
+import { HomePage } from 'test/page-objects';
+instead of
+import { HomePage } from '../../page-objects';
+```

@@ -1,6 +1,7 @@
 import { Task } from '@serenity-js/core';
 import { Enter } from '@serenity-js/webdriverio';
-import { HomePage } from '../../page-objects';
+import { HomePage } from 'test/page-objects';
+//import { HomePage } from '../../page-objects';
 
 export const SearchFor = {
     of: (name: string) => 
