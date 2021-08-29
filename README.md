@@ -47,5 +47,9 @@ npm i @serenity-js/console-reporter --save-dev
 
 9. to add serenityJS with cucumber webdriverio framework
 npm i @serenity-js/cucumber --save-dev
+etc...
 
-**[LayMui-Toh]
+10. Add serenityJS-cucumber framework to config file wdio.conf.ts
+Attempt to add screenplay (WIP)
+
+**[LayMui-Toh] **
