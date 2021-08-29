@@ -45,3 +45,7 @@ npm i @serenity-js/cucumber --save-dev
 npm i @serenity-js/assertions --save-dev
 npm i @serenity-js/console-reporter --save-dev
 
+9. to add serenityJS with cucumber webdriverio framework
+npm i @serenity-js/cucumber --save-dev
+
+**[LayMui-Toh]
