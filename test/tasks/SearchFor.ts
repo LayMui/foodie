@@ -1,5 +1,6 @@
 import { Task } from '@serenity-js/core';
 import { Enter } from '@serenity-js/webdriverio';
+import { SearchPage } from '../page-objects/SearchPage';
 
 
 /**
@@ -9,7 +10,7 @@ import { Enter } from '@serenity-js/webdriverio';
  export const SearchFor = {
     
     called: (name: string) =>
-        Task.where(`#actor search for restuarant called ${ name }`,
-          
+        Task.where(`#actor search for restaurant called ${ name }`,
+            Enter.theValue(name).into(SearchPage.inputSearch)
         ),
 }

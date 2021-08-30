@@ -52,4 +52,10 @@ etc...
 10. Add serenityJS-cucumber framework to config file wdio.conf.ts
 Attempt to add screenplay (WIP)
 
+Issues: 
+```
+TypeError: actor.attemptsTo is not a function
+    at /Users/laymui/dev/taiger/foodie/test/step-definitions/SearchForRestaurant.steps.ts:14:9
+    ```
+
 **[LayMui-Toh] **
