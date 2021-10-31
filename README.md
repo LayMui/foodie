@@ -41,7 +41,7 @@ cd food
 npm start 
 ```
 
-8. To add serenityJS library:
+8. To add and update serenityJS library:
 npm i @serenity-js/serenity-bdd --save-dev
 npm i @serenity-js/core --save-dev
 npm i @serenity-js/cucumber --save-dev
@@ -63,5 +63,7 @@ TypeError: actor.attemptsTo is not a function
 
 tested on xcode 12
 and node 14.7.6
+
+
 
 **[LayMui-Toh]**
