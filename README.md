@@ -36,6 +36,9 @@ Issues:
 ```
 No bundle URL 
 Resolved by running the metro launcher
+git clone https://github.com/LayMui/food.git
+cd food
+npm start 
 ```
 
 8. To add serenityJS library:
@@ -58,4 +61,7 @@ TypeError: actor.attemptsTo is not a function
     at /Users/laymui/dev/taiger/foodie/test/step-definitions/SearchForRestaurant.steps.ts:14:9
     ```
 
-**[LayMui-Toh] **
+tested on xcode 12
+and node 14.7.6
+
+**[LayMui-Toh]**

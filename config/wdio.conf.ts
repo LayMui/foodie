@@ -33,7 +33,7 @@ export const config: WebdriverIOConfig = {
            // Photographer.whoWill(TakePhotosOfInteractions),     // slower execution, more comprehensive reports
             // Photographer.whoWill(TakePhotosOfFailures),      // fast execution, screenshots only when tests fail
             ConsoleReporter.forDarkTerminals(),
-           // new SerenityBDDReporter(),
+            new SerenityBDDReporter(),
         ]
     },
     //

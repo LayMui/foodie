@@ -1,1 +1,1 @@
-export * from './SearchFor';
+export * from './SearchForRestaurant';
