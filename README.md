@@ -36,9 +36,12 @@ Issues:
 ```
 No bundle URL 
 Resolved by running the metro launcher
+git clone https://github.com/LayMui/food.git
+cd food
+npm start 
 ```
 
-8. To add serenityJS library:
+8. To add and update serenityJS library:
 npm i @serenity-js/serenity-bdd --save-dev
 npm i @serenity-js/core --save-dev
 npm i @serenity-js/cucumber --save-dev
@@ -47,5 +50,20 @@ npm i @serenity-js/console-reporter --save-dev
 
 9. to add serenityJS with cucumber webdriverio framework
 npm i @serenity-js/cucumber --save-dev
+etc...
 
-**[LayMui-Toh]
+10. Add serenityJS-cucumber framework to config file wdio.conf.ts
+Attempt to add screenplay (WIP)
+
+Issues: 
+```
+TypeError: actor.attemptsTo is not a function
+    at /Users/laymui/dev/taiger/foodie/test/step-definitions/SearchForRestaurant.steps.ts:14:9
+    ```
+
+tested on xcode 12
+and node 14.7.6
+
+
+
+**[LayMui-Toh]**

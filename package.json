@@ -4,33 +4,33 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "ios.app": "wdio config/wdio.ios.app.conf.ts"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/LayMui/cucumber-webdriverio.git"
+    "postinstall": "serenity-bdd update",
+    "clean": "rimraf target",
+    "test": "failsafe clean test:execute test:report",
+    "test:execute": "wdio config/wdio.ios.app.conf.ts",
+    "test:report": "serenity-bdd run --features ./test/features",
+    "ios.app": "wdio config/wdio.ios.app.conf.ts",
+    "lint": "eslint --ext ts --config .eslintrc.js .",
+    "lint:fix": "npm run lint -- --fix"
   },
   "keywords": [
     "webdriverio"
   ],
   "author": "LayMui",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/LayMui/cucumber-webdriverio/issues"
-  },
-  "homepage": "https://github.com/LayMui/cucumber-webdriverio#readme",
   "dependencies": {
     "appium": "^1.21.0"
   },
   "devDependencies": {
     "@cucumber/cucumber": "^7.3.1",
-    "@serenity-js/assertions": "^2.29.9",
-    "@serenity-js/console-reporter": "^2.29.9",
-    "@serenity-js/core": "^2.29.9",
-    "@serenity-js/cucumber": "^2.29.9",
-    "@serenity-js/serenity-bdd": "^2.29.9",
+    "@serenity-js/assertions": "^2.32.2",
+    "@serenity-js/console-reporter": "^2.32.2",
+    "@serenity-js/core": "^2.32.2",
+    "@serenity-js/cucumber": "^2.32.2",
+    "@serenity-js/serenity-bdd": "^2.32.2",
     "@serenity-js/webdriverio": "^2.31.1",
+    "@typescript-eslint/eslint-plugin": "^4.29.3",
+    "@typescript-eslint/parser": "^4.29.3",
     "@wdio/appium-service": "^7.8.0",
     "@wdio/cli": "^7.11.0",
     "@wdio/cucumber-framework": "^7.9.0",
@@ -38,6 +38,9 @@
     "@wdio/spec-reporter": "^7.9.0",
     "chromedriver": "^92.0.1",
     "expect-webdriverio": "^3.1.2",
+    "is-ci": "^3.0.0",
+    "npm-failsafe": "^0.4.3",
+    "rimraf": "^3.0.2",
     "wdio-appium-service": "^0.2.3",
     "wdio-chromedriver-service": "^7.2.0"
   }
