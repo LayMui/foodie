@@ -20,7 +20,7 @@
   "author": "LayMui",
   "license": "ISC",
   "dependencies": {
-    "appium": "^1.21.0"
+    "appium": "^1.22.0"
   },
   "devDependencies": {
     "@cucumber/cucumber": "^7.3.1",

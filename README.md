@@ -72,7 +72,8 @@ TypeError: actor.attemptsTo is not a function
     ```
 
 tested on xcode 12
-and node 14.7.6
+and node 17.0.1
+appium v.1.22.0
 
 ````
 

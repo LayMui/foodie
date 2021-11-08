@@ -7,17 +7,19 @@ class HomePage extends Page {
     /**
      * define selectors using getter methods
      */
-    get inputSearch () { return $('~search_bar') }
+    //get inputSearch () { return $('~search_bar') }
     
    
     /**
      * a method to encapsule automation code to interact with the page
      */
     async searchFor(name: string) {
-        await this.inputSearch.setValue(name);   
-        await this.inputSearch.touchAction('tap');
-    }
+    //     await this.inputSearch.setValue(name);   
+    //     await this.inputSearch.touchAction('tap');
 
+         await $('~search_bar').setValue(name);   
+         await $('~search_bar').touchAction('tap');
+    }
     /**
      * overwrite specifc options to adapt it to page object
      */
