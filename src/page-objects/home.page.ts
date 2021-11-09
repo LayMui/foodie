@@ -16,7 +16,7 @@ class HomePage extends Page {
     async searchFor(name: string) {
     //     await this.inputSearch.setValue(name);   
     //     await this.inputSearch.touchAction('tap');
-
+         await $('~search_bar').clearValue();
          await $('~search_bar').setValue(name);   
          await $('~search_bar').touchAction('tap');
     }

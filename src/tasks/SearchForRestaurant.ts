@@ -10,7 +10,7 @@ import { SearchPage } from '../page-objects/SearchPage';
  export const SearchForRestaurant = {
     
     called: (name: string) =>
-        Task.where(`#actor search for restaurant called ${ name }`,
+        Task.where(`#actor search for restaurant called ${ name }`,  
             Enter.theValue(name).into(SearchPage.inputSearch)
         ),
 }

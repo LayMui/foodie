@@ -1,0 +1,2 @@
+Step "he wants to search for restaurant name Dolce" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+[iPhone 11 iOS 14.5 #0-0] Step "he wants to search for restaurant name Dolce" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.

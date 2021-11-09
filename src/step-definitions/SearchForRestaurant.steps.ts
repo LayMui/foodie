@@ -16,10 +16,10 @@ Given(/^(.*) is at the (\w+) app$/, async (actor: Actor, page) => {
 });
 
 
-When(/^(?:.*) wants to search for restaurant name (\w+)$/, async (name) => {
- // actor.attemptsTo(SearchForRestaurant.called(name));
+When('{pronoun} wants to search for restaurant name {string}', async (actor: Actor, name:string) => {
+ await actor.attemptsTo(SearchForRestaurant.called(name));
 //return  actorCalled("Jan").attemptsTo(SearchFor.called(name));
-    await HomePage.searchFor(name);
+   // await HomePage.searchFor(name);
      
 });
 
