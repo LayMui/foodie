@@ -49,7 +49,7 @@ npm update
 
 
 
-tested on xcode 12
-and node 17.0.1
+tested on xcode 12.5.1
+and node 16.3.0
 appium v.1.22.0
 
