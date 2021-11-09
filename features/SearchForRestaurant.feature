@@ -8,7 +8,7 @@ Feature: Search For Restaurant
 
 @test
   Scenario Outline: Search for restaurant
-    When he wants to search for restaurant name <name>
+    When he wants to search for restaurant name "<name>"
     Then he is able to see the result of his search
     Examples:
     | name  |

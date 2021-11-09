@@ -11,7 +11,7 @@ const pages = {
     food: HomePage
 }
 
-Given(/^(.*) is at the (\w+) app$/, async (actor: Actor, page) => {
+Given('{actor} is at the food app', async (actor: Actor) => {
 
 });
 
