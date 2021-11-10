@@ -51,5 +51,10 @@ Nov 10, 2021:
 
 ```
 
+
+10 Nov 2021:
+```
+Error: Can't call addValue on element with selector "~search-bar" because element wasn't found
+```
 **[LayMui-Toh]**
 ```

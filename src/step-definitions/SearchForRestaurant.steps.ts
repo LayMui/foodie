@@ -5,6 +5,7 @@ import { Actor, actorCalled, actorInTheSpotlight } from '@serenity-js/core';
 import { SearchForRestaurant } from '../tasks';
 
 import HomePage from '../page-objects/home.page';
+import { BrowseTheWeb } from '@serenity-js/webdriverio';
 
 
 const pages = {
@@ -12,7 +13,8 @@ const pages = {
 }
 
 Given('{actor} is at the food app', async (actor: Actor) => {
-
+    actor.whoCan(
+        BrowseTheWeb.using(browser))
 });
 
 
