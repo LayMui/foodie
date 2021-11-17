@@ -56,5 +56,15 @@ Nov 10, 2021:
 ```
 Error: Can't call addValue on element with selector "~search-bar" because element wasn't found
 ```
+
+
+16 Nov, 2021:
+```
+: 'search-bar' }
+[0-0] 2021-11-17T01:56:37.668Z INFO webdriver: RESULT {
+[0-0]   error: 'no such element',
+[0-0]   message: 'An element could not be located on the page using the given search parameters.',
+[0-0]   stacktrace: 'NoSuchElementError: An element could not be located on the page using the given search parameters.\n' +
+```
 **[LayMui-Toh]**
 ```

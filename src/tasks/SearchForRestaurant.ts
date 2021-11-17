@@ -1,5 +1,5 @@
 import { Task } from '@serenity-js/core';
-import { Enter } from '@serenity-js/webdriverio';
+import { Enter, isVisible, Wait } from '@serenity-js/webdriverio';
 import { SearchPage } from '../page-objects/SearchPage';
 
 
@@ -11,6 +11,7 @@ import { SearchPage } from '../page-objects/SearchPage';
     
     called: (name: string) =>
         Task.where(`#actor search for restaurant called ${ name }`,  
+            Wait.until(SearchPage.inputSearch, isVisible()),
             Enter.theValue(name).into(SearchPage.inputSearch)
         ),
 }
